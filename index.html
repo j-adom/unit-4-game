@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <div class = "container">
+        <div class = "jumbotron">
+            <h1>Jewel Jumbler!</h1>
+            <br>
+            <br>
+            <p class="lead">
+                    <a class="btn btn-primary btn-lg" id="startOver" role="button">Start New Game</a>
+            </p>
+        </div>
+        <div class = "row">
+                <div class ="col-md-6">
+                    <div class = "card ">
+                        <p>You will be given a random number at the start of the game.</p>
+                        <p>There are four Jewels below. By clicking on a Jewel you will add a specific amount of points to your total score.</p>
+                        <p>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number</p>
+                        <p>The value of each Jewel is hidden from you until you click on it.</p>
+                        <p>Each time you click "Start Over" the values of each Jewel change</p>
+                    </div>
+                </div>
+                <div class ="col-md-6">
+                    <div class="card">
+                        <div id="target">0</div>
+                        <br>
+                        <div id="total-score">0</div>
+                        <br>
+                        <h1>Wins: <span id="win-count">0</span> Loss: <span id="loss-count">0</span></h1>
+                        <br>
+                        <div id="end-game"></div>
+                    
+                    </div>
+                </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-3">
+                    <div class="btn btn-primary button1" style="width:auto">
+                        <img src="assets/images/jewel1.jpg" alt="Jewel #1" style="height:150px; width:120px">
+                    </div>
+            </div>
+    
+
+            <div class = "col-md-3">
+                    <div class="btn btn-primary button2" style="width:auto">
+                        <img src="assets/images/jewel2.jpg" alt="Jewel #2" style="height:150px; width:120px">
+                    </div>
+            </div>
+
+            <div class = "col-md-3">
+                    <div class="btn btn-primary button3" style="width:auto">
+                        <img src="assets/images/jewel3.jpg" alt="Card image" style="height:150px; width:120px">
+                    </div>
+            </div>
+
+            <div class = "col-md-3">
+                    <div class="btn btn-primary button4" style="width:auto">
+                        <img src="assets/images/jewel4.jpg" alt="Card image" style="height:150px; width:120px">
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script> 
+    
+   
+
+
+
+
+
+    
+</body>
+</html>
